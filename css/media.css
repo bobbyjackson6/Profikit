@@ -1,0 +1,148 @@
+@media only screen and (min-device-width : 1024px) {
+    .location-container {
+        padding: 0 2%;
+    }
+
+    .search-input {
+        padding: 15px;
+    }
+
+    .lupa {
+        position: absolute;
+        right: 0px;
+        top: 13px;
+    }
+
+    nav {
+        padding: 0 3%;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+
+    .address,
+    .schedule {
+        display: none;
+    }
+
+    .logon>* {
+        display: none;
+    }
+
+    .city {
+        position: relative;
+        width: 200px;
+    }
+
+    .phone-number {
+        position: absolute;
+        top: 7px;
+        left: 40%;
+    }
+
+    .number-order a {
+        display: none;
+    }
+
+    .form-search {
+        position: absolute;
+        top: -85px;
+        right: -230px;
+    }
+
+    .search-input {
+        width: 150px;
+        border-radius: 0;
+        padding: 13px;
+
+        text-align: left;
+        border: none;
+
+    }
+
+    .form-search:before {
+        content: url('../img/lupa2.png');
+        position: absolute;
+        top: 9px;
+        left: -20px
+    }
+
+    .lupa {
+        display: none;
+    }
+
+    .basket {
+        position: relative;
+        right: 90px;
+    }
+
+    .logo {
+        font-size: 29px;
+        line-height: 42px;
+    }
+
+    .logo-slogan {
+        width: 260px;
+        position: relative;
+        left: 30%;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .nav {
+        display: none;
+
+    }
+
+    .navigation {
+        position: absolute;
+        left: 60px;
+        top: 60px;
+        width: 200px;
+        background: #0B6EDB;
+    }
+
+    .nav-menu-catalog {
+        width: 200px;
+        height: 39px;
+        padding: 0;
+        padding-top: 10px;
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+
+    .nav-menu-catalog img {
+        position: relative;
+        top: 3px;
+        right: -10px;
+    }
+
+    .submenu li:before {
+        display: none;
+    }
+
+    .submenu {
+        width: 250px;
+        padding-left: 0;
+    }
+
+    .submenu li:first-child {
+        padding-top: 50px;
+    }
+
+    li.catalog {
+        padding-left: 0;
+        font-size: 13px;
+    }
+
+    .column {
+        padding-left: 50px;
+    }
+
+    .column:first-child {
+        margin-left: 100px;
+    }
+}

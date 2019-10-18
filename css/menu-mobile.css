@@ -1,0 +1,85 @@
+body {
+    border: 1px solid #000;
+    width: 280px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 35px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #313D50;
+}
+
+.entry-registration {
+    padding: 10px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #79828F;
+}
+
+.entry,
+.registration {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.entry img,
+.registration img {
+    margin-right: 15px;
+}
+
+
+.nav {
+    padding: 8px 0;
+    padding-left: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #79828F;
+}
+
+.location {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.location img {
+    padding-right: 15px;
+}
+
+.list-location select {
+    margin-left: 5px;
+    background: none;
+    color: white;
+    font-family: 'PT Sans Caption';
+    font-weight: bold;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 130px;
+    border: 0;
+
+}
+
+.list-location img {
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}

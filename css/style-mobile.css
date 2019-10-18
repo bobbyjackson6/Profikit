@@ -1,0 +1,252 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 320px;
+    font-family: 'PT Sans Caption';
+    font-weight: bold;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-container {
+    padding: 8px 10px;
+    border-bottom: 1px solid #D3D3D3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    font-family: 'Secular One';
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.phone-number {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.nav-container {
+    align-items: center;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0.2;
+    justify-content: space-between;
+}
+
+.amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    background: #E65555;
+    border-radius: 50%;
+}
+
+.catalog-title {
+    color: #fff;
+    z-index: 1;
+    padding: 13.5px 0;
+    background: #337FD2;
+    font-family: 'PT Sans Caption';
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.catalog-title:before {
+    content: url('../img/burger-menu.png');
+    margin-right: 20px;
+}
+
+
+
+li.catalog-title a {
+    color: #fff;
+}
+
+.catalog-title a img {
+    margin-right: 22px;
+}
+
+ul.submenu {
+    width: 320px;
+    text-align: left;
+    top: 49px;
+    position: absolute;
+    z-index: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+ul.submenu li {
+    color: black;
+    border: 1px solid #D3D3D3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11.5px 10px;
+    height: 25px;
+}
+
+
+
+.catalog-title:active>.submenu {
+    display: block;
+}
+
+.submenu>li>ul {
+    display: none;
+}
+
+.form {
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.authorization-container {
+    font-weight: normal;
+}
+
+.autorization-registration {
+    font-family: 'PT Sans Caption';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.autorization-registration div {
+    padding: 10px 0;
+    text-align: center;
+    width: 50%;
+    border-bottom: 2px solid #DADADA;
+}
+
+div.active {
+    color: #0B6EDB;
+    border-bottom: 2px solid #337FD2;
+}
+
+.form_input {
+    font-family: 'PT Sans Caption';
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 44px;
+}
+.type_password,.type_email{
+    font-size: 24px;
+}
+.password {
+    display: flex;
+    position: relative;
+}
+.closed-eye{
+    position: absolute;
+    left: 280px;
+    bottom: 245px;
+}
+
+.password span:first-child {
+    color: #0B6EDB;
+    margin-right: 100px;
+}
+
+.forgot-password {
+    text-decoration-line: underline;
+    color: #8E8E8E;
+}
+
+.checkbox {
+    position: relative;
+    padding-left: 55px;
+    padding-top: 10px;
+
+}
+
+.checkbox input[type=checkbox] {
+    display: none;
+}
+
+.checkbox label:after {
+    content: '';
+    display: block;
+    height: 23px;
+    width: 23px;
+    border: 2px solid #337FD2;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.checkbox input[type=checkbox]:checked+label:after {
+    content: url('../img/chekmark.png');
+    width: 23px;
+    height: 23px;
+    top: 10px;
+}
+
+.confidential-policy {
+    font-size: 14px;
+    padding: 20px 10px;
+    width: 300px;
+}
+
+.confidential-policy span {
+    color: #0B6EDB;
+    text-decoration: underline;
+}
+
+.enter {
+    display: flex;
+    background: #337FD2;
+    border-radius: 3px;
+    justify-content: center;
+    margin: 30px 5px;
+    padding: 14px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    width: 310px;
+    
+}
