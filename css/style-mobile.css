@@ -1,7 +1,6 @@
 body {
     padding: 0;
     margin: 0;
-    width: 320px;
     font-family: 'PT Sans Caption';
     font-weight: bold;
 }
@@ -89,7 +88,6 @@ a {
 }
 
 
-
 li.catalog-title a {
     color: #fff;
 }
@@ -119,16 +117,11 @@ ul.submenu li {
     padding: 11.5px 10px;
     height: 25px;
 }
-
-
-
-.catalog-title:active>.submenu {
+.submenu>li>ul {
     display: block;
 }
 
-.submenu>li>ul {
-    display: none;
-}
+/* Вход */
 
 .form {
     padding-top: 30px;
@@ -136,7 +129,39 @@ ul.submenu li {
 }
 
 .authorization-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.autorization-registration,
+.form,
+.confidential-policy {
+    font-family: 'PT Sans Caption', sans-serif;
     font-weight: normal;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.authorization-content {
+
+    background: white;
+    width: 41%;
+    margin: 100px auto;
+}
+
+span.close {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
 .autorization-registration {
@@ -155,6 +180,7 @@ ul.submenu li {
     text-align: center;
     width: 50%;
     border-bottom: 2px solid #DADADA;
+    cursor: pointer;
 }
 
 div.active {
@@ -170,36 +196,64 @@ div.active {
     flex-direction: column;
 }
 
-input {
-    height: 44px;
+.form_input span {
+    color: #0B6EDB;
 }
-.type_password,.type_email{
+
+.type_email,
+.type_password-1,
+.type_password-2 {
+    height: 44px;
     font-size: 24px;
 }
-.password {
+
+.form_password div {
+    justify-content: space-between;
+    align-items: center;
     display: flex;
-    position: relative;
+
 }
-.closed-eye{
+
+.eye-1 {
+    /* display: none; */
     position: absolute;
-    left: 280px;
-    bottom: 245px;
+    right: 34%;
+    top: 355px;
+}
+
+.open-eye-1 {
+    display: none;
 }
 
 .password span:first-child {
     color: #0B6EDB;
-    margin-right: 100px;
 }
 
 .forgot-password {
+    position: relative;
     text-decoration-line: underline;
     color: #8E8E8E;
 }
 
+.form_one_more_password {
+    flex-direction: column;
+    display: none;
+}
+
+.eye-2 {
+    position: absolute;
+    right: 34%;
+    top: 438px;
+}
+
+.open-eye-2 {
+    display: none;
+}
+
 .checkbox {
     position: relative;
-    padding-left: 55px;
-    padding-top: 10px;
+    padding-left: 40px;
+    padding-top: 20px;
 
 }
 
@@ -215,21 +269,23 @@ input {
     border: 2px solid #337FD2;
     box-sizing: border-box;
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 0;
 }
 
 .checkbox input[type=checkbox]:checked+label:after {
     content: url('../img/chekmark.png');
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 23px;
     height: 23px;
-    top: 10px;
+    top: 15px;
 }
 
 .confidential-policy {
     font-size: 14px;
-    padding: 20px 10px;
-    width: 300px;
+    margin-top: 20px;
 }
 
 .confidential-policy span {
@@ -237,16 +293,56 @@ input {
     text-decoration: underline;
 }
 
-.enter {
+.enter-container,
+.register-container {
+    padding-bottom: 1px;
+}
+
+.enter,
+.register {
     display: flex;
     background: #337FD2;
     border-radius: 3px;
     justify-content: center;
-    margin: 30px 5px;
+    margin: 30px auto;
     padding: 14px 0;
     font-weight: bold;
     font-size: 16px;
     color: #fff;
     width: 310px;
-    
+}
+
+.register {
+    display: none;
+}
+
+
+
+/* Войти через соц сети */
+.social-media-сontainer {
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+.social-medias {
+    margin: 20px 8%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.social-medias div {
+    padding: 5px;
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-medias div img {
+    margin-right: 8px;
 }
